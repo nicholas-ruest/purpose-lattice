@@ -1,0 +1,12 @@
+[package]
+name = "pl-auth"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+pl-errors = { path = "../pl-errors" }
+
+[lints]
+workspace = true

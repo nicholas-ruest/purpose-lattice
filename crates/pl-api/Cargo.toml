@@ -1,0 +1,25 @@
+[package]
+name = "pl-api"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+pl-auth = { path = "../pl-auth" }
+pl-config = { path = "../pl-config" }
+pl-errors = { path = "../pl-errors" }
+pl-middleware = { path = "../pl-middleware" }
+pl-orchestrator = { path = "../pl-orchestrator" }
+pl-plan = { path = "../pl-plan" }
+pl-repository = { path = "../pl-repository" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+axum = { workspace = true }
+tokio = { workspace = true }
+tower-http = { workspace = true }
+tracing = { workspace = true }
+
+pl-seed = { path = "../pl-seed" }
+[lints]
+workspace = true

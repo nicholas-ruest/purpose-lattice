@@ -1,0 +1,15 @@
+[package]
+name = "pl-arrow"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+pl-errors = { path = "../pl-errors" }
+pl-plan = { path = "../pl-plan" }
+arrow-array = { workspace = true }
+arrow-schema = { workspace = true }
+
+[lints]
+workspace = true

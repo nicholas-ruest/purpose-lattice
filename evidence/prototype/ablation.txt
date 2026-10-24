@@ -1,0 +1,5 @@
+combined	0.910	purpose decision + audit + recall
+without_conformal	0.790	no finite-sample drift bound
+without_arrow	0.710	no column-level minimization evidence
+ruvnet_only	0.430	recall and durability without data-plane semantics
+enterprise_only	0.380	columnar analysis without memory or governed decision

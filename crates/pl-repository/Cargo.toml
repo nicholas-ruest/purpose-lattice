@@ -1,0 +1,17 @@
+[package]
+name = "pl-repository"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+pl-errors = { path = "../pl-errors" }
+pl-rvf = { path = "../pl-rvf" }
+pl-types = { path = "../pl-types" }
+serde_json = { workspace = true }
+sha2 = { workspace = true }
+hex = { workspace = true }
+
+[lints]
+workspace = true

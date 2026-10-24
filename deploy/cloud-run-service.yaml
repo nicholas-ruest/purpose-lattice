@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata: {name: purpose-lattice}
+spec:
+  template:
+    spec:
+      serviceAccountName: purpose-lattice-runtime
+      containers:
+      - image: IMAGE_DIGEST_REQUIRED
+        env:
+        - {name: PL_AUTH_MODE, value: external-iap}
+        - {name: PL_DATA_DIR, value: /tmp}

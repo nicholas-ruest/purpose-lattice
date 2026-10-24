@@ -1,0 +1,279 @@
+openapi: 3.1.0
+info:
+  title: Purpose Lattice API
+  version: 1.0.0
+  description: Typed governance API for registering data covenants, evaluating processing plans, and reading append-only RVF audit records.
+  license: {name: Apache-2.0, identifier: Apache-2.0}
+servers:
+  - url: http://127.0.0.1:18180
+    description: Local prototype
+tags:
+  - name: runtime
+    description: Process health, readiness, and prototype session establishment.
+  - name: covenants
+    description: Covenant registration, processing-plan evaluation, and durable audit retrieval.
+paths:
+  /healthz:
+    get:
+      summary: Check process health
+      tags: [runtime]
+      operationId: health
+      security: []
+      responses:
+        '200':
+          description: Process is alive.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Health'}
+        '500': {$ref: '#/components/responses/Problem'}
+  /readyz:
+    get:
+      summary: Check service readiness
+      tags: [runtime]
+      operationId: ready
+      security: []
+      responses:
+        '200':
+          description: API and RVF repository are ready.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Health'}
+        '500': {$ref: '#/components/responses/Problem'}
+  /api/v1/session:
+    post:
+      summary: Establish a local prototype session
+      tags: [runtime]
+      operationId: establishSession
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/SessionRequest'}
+      responses:
+        '204':
+          description: HttpOnly SameSite prototype session established.
+          headers:
+            Set-Cookie:
+              schema: {type: string}
+        '401': {$ref: '#/components/responses/Problem'}
+  /api/v1/covenants:
+    get:
+      summary: List registered data covenants
+      tags: [covenants]
+      operationId: listCovenants
+      security: [{cookieSession: []}]
+      responses:
+        '200':
+          description: Registered covenant records.
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {$ref: '#/components/schemas/StoredCovenant'}
+        '401': {$ref: '#/components/responses/Problem'}
+    post:
+      summary: Register a governed data covenant
+      tags: [covenants]
+      operationId: registerCovenant
+      security: [{cookieSession: []}]
+      parameters:
+        - {$ref: '#/components/parameters/CorrelationId'}
+        - {$ref: '#/components/parameters/IdempotencyKey'}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/RegisterCovenant'}
+      responses:
+        '201':
+          description: Covenant appended to the RVF archive.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/StoredCovenant'}
+        '400': {$ref: '#/components/responses/Problem'}
+        '401': {$ref: '#/components/responses/Problem'}
+        '403': {$ref: '#/components/responses/Problem'}
+        '409': {$ref: '#/components/responses/Problem'}
+  /api/v1/covenants/{id}/evaluate:
+    post:
+      summary: Evaluate a proposed processing plan
+      tags: [covenants]
+      operationId: evaluatePlan
+      security: [{cookieSession: []}]
+      parameters:
+        - {$ref: '#/components/parameters/DatasetId'}
+        - {$ref: '#/components/parameters/CorrelationId'}
+        - {$ref: '#/components/parameters/IdempotencyKey'}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/ProcessingPlan'}
+      responses:
+        '201':
+          description: Allowed governed result; plan and evaluation were appended.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/EvaluationResult'}
+        '400': {$ref: '#/components/responses/Problem'}
+        '401': {$ref: '#/components/responses/Problem'}
+        '403':
+          description: Policy denied before any plan or evaluation append.
+          content:
+            application/problem+json:
+              schema: {$ref: '#/components/schemas/Problem'}
+        '404': {$ref: '#/components/responses/Problem'}
+  /api/v1/covenants/{id}/audit:
+    get:
+      summary: Read durable covenant audit records
+      tags: [covenants]
+      operationId: getAudit
+      security: [{cookieSession: []}]
+      parameters:
+        - {$ref: '#/components/parameters/DatasetId'}
+      responses:
+        '200':
+          description: Append-only records for the dataset.
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {$ref: '#/components/schemas/StoredRecord'}
+        '400': {$ref: '#/components/responses/Problem'}
+        '401': {$ref: '#/components/responses/Problem'}
+components:
+  securitySchemes:
+    cookieSession:
+      type: apiKey
+      in: cookie
+      name: pl_session
+  parameters:
+    DatasetId:
+      name: id
+      in: path
+      required: true
+      schema: {$ref: '#/components/schemas/DatasetId'}
+    CorrelationId:
+      name: x-correlation-id
+      in: header
+      required: false
+      schema: {type: string, minLength: 3, maxLength: 128}
+    IdempotencyKey:
+      name: idempotency-key
+      in: header
+      required: true
+      schema: {type: string, minLength: 8, maxLength: 128}
+  responses:
+    Problem:
+      description: RFC 9457-style typed failure.
+      content:
+        application/problem+json:
+          schema: {$ref: '#/components/schemas/Problem'}
+  schemas:
+    DatasetId:
+      type: string
+      pattern: '^[A-Za-z0-9_-]{3,64}$'
+    Health:
+      type: object
+      required: [status, service]
+      properties:
+        status: {type: string, const: ok}
+        service: {type: string, const: purpose-lattice}
+    SessionRequest:
+      type: object
+      additionalProperties: false
+      required: [role]
+      properties:
+        role: {type: string, enum: [steward, analyst]}
+    RegisterCovenant:
+      type: object
+      additionalProperties: false
+      required: [dataset_id, name, owner, allowed_purposes, sensitive_fields, allowed_regions, retention_days, sensitivity]
+      properties:
+        dataset_id: {$ref: '#/components/schemas/DatasetId'}
+        name: {type: string, minLength: 3, maxLength: 120}
+        owner: {type: string, minLength: 3, maxLength: 120}
+        allowed_purposes:
+          type: array
+          minItems: 1
+          uniqueItems: true
+          items: {type: string, minLength: 4, maxLength: 160}
+        sensitive_fields:
+          type: array
+          uniqueItems: true
+          items: {type: string, minLength: 1, maxLength: 128}
+        allowed_regions:
+          type: array
+          minItems: 1
+          uniqueItems: true
+          items: {type: string, minLength: 2, maxLength: 64}
+        retention_days: {type: integer, minimum: 1, maximum: 3650}
+        sensitivity: {type: string, enum: [public, internal, confidential, restricted]}
+    StoredCovenant:
+      type: object
+      required: [kind, dataset_id, name, owner, allowed_purposes, sensitive_fields, allowed_regions, retention_days, receipt]
+      properties:
+        kind: {type: string, const: covenant}
+        dataset_id: {$ref: '#/components/schemas/DatasetId'}
+        name: {type: string}
+        owner: {type: string}
+        allowed_purposes: {type: array, items: {type: string}}
+        sensitive_fields: {type: array, items: {type: string}}
+        allowed_regions: {type: array, items: {type: string}}
+        retention_days: {type: integer, minimum: 1}
+        receipt: {type: string, pattern: '^[a-f0-9]{64}$'}
+    ProcessingPlan:
+      type: object
+      additionalProperties: false
+      required: [dataset_id, purpose, selected_fields, region, retention_days, operation]
+      properties:
+        dataset_id: {$ref: '#/components/schemas/DatasetId'}
+        purpose: {type: string, minLength: 4, maxLength: 160}
+        selected_fields:
+          type: array
+          minItems: 1
+          maxItems: 128
+          uniqueItems: true
+          items: {type: string, minLength: 1, maxLength: 128}
+        region: {type: string, minLength: 2, maxLength: 64}
+        retention_days: {type: integer, minimum: 1, maximum: 3650}
+        operation: {type: string, enum: [read, aggregate, train, export]}
+    EvaluationResult:
+      type: object
+      required: [dataset_id, decision, risk_score, drift_upper, minimization_ratio, selected_columns, sensitive_columns, reasons, analogues, receipt, correlation_id]
+      properties:
+        dataset_id: {$ref: '#/components/schemas/DatasetId'}
+        decision: {type: string, enum: [allow, deny, review]}
+        risk_score: {type: number, minimum: 0, maximum: 1}
+        drift_upper: {type: number, minimum: 0, maximum: 1}
+        minimization_ratio: {type: number, minimum: 0, maximum: 1}
+        selected_columns: {type: integer, minimum: 0}
+        sensitive_columns: {type: integer, minimum: 0}
+        reasons: {type: array, items: {type: string}}
+        analogues: {type: array, items: {$ref: '#/components/schemas/Analogue'}}
+        receipt: {type: string, pattern: '^[a-f0-9]{64}$'}
+        correlation_id: {type: string}
+    Analogue:
+      type: object
+      required: [dataset_id, distance, decision]
+      properties:
+        dataset_id: {type: string}
+        distance: {type: number, minimum: 0}
+        decision: {type: string}
+    StoredRecord:
+      type: object
+      description: Tagged covenant, plan, evaluation, or audit record from the RVF archive.
+      required: [kind]
+      properties:
+        kind: {type: string, enum: [covenant, plan, evaluation, audit]}
+      additionalProperties: true
+    Problem:
+      type: object
+      required: [type, title, status, detail, correlation_id]
+      properties:
+        type: {type: string, format: uri-reference}
+        title: {type: string}
+        status: {type: integer, minimum: 400, maximum: 599}
+        detail: {type: string}
+        correlation_id: {type: string}

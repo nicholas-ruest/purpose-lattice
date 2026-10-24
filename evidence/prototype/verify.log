@@ -1,0 +1,1168 @@
+    Checking pl-orchestrator v0.1.0 (/home/ruv/work/purpose-lattice/crates/pl-orchestrator)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.30s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.16s
+     Running unittests src/lib.rs (target/debug/deps/pl_api-cffcf4a314c241b9)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_arrow-a85b56b490657dbe)
+
+running 1 test
+test tests::real_arrow_batch_counts_sensitive_columns ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_audit-35d8010b61d5e85f)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_auth-a56502227d48a6a0)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_calibration-024eed9aff42738a)
+
+running 1 test
+test tests::finite_sample_upper_is_conservative ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/deps/purpose_lattice-dbccc67a60d70274)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_config-8f5ea309b9efc7cf)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_covenant-aba9aa6ef902cae8)
+
+running 1 test
+test tests::rejects_unbounded_retention ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_embedding-0f2ba7d123a0d7ff)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_errors-63d6bb5e32cb06e4)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_evaluation-b3a2ef0b8873aa89)
+
+running 2 tests
+test tests::denied_plan_has_no_effect ... ok
+test tests::vertical_slice_and_restart_retrieval ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_middleware-5f85bd57293d179c)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_orchestrator-4e351d12fc65278b)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/full_stack.rs (target/debug/deps/full_stack-eb96adc2b3a73ece)
+
+running 1 test
+test allowed_and_denied_plans_preserve_auditable_effects ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_plan-cfb2930cacf4181f)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_policy-2bee083e8ac9c520)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_recall-2227835674ee3ef4)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_repository-d04f4272d6de5d70)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_retention-4b575611b9764b77)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_risk-c5d352674fb15c71)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_ruvector-a12a060f3d64020f)
+
+running 1 test
+test tests::executed_insert_search ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_rvf-177dfc00adb74ce4)
+
+running 1 test
+test tests::durable_rvf_round_trip ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_seed-a2bdab71903b8b32)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_taint-801f58f6a5bc72e4)
+
+running 1 test
+test tests::aggregation_cannot_make_restricted_public ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/pl_types-d07fc0e2b5cc87c2)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_api
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_arrow
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_audit
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_auth
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_calibration
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_config
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_covenant
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_embedding
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_errors
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_evaluation
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_middleware
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_orchestrator
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_plan
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_policy
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_recall
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_repository
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_retention
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_risk
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_ruvector
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_rvf
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_seed
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_taint
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pl_types
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+warning[duplicate]: found 2 duplicate entries for crate 'cpufeatures'
+   ┌─ /home/ruv/work/purpose-lattice/Cargo.lock:44:1
+   │
+44 │ ╭ cpufeatures 0.2.17 registry+https://github.com/rust-lang/crates.io-index
+45 │ │ cpufeatures 0.3.1 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰───────────────────────────────────────────────────────────────────────┘ lock entries
+   │
+   ├ cpufeatures v0.2.17
+     └── sha2 v0.10.9
+         ├── pl-audit v0.1.0
+         │   └── pl-orchestrator v0.1.0
+         │       ├── pl-api v0.1.0
+         │       │   └── pl-cli v0.1.0
+         │       ├── pl-cli v0.1.0 (*)
+         │       ├── pl-evaluation v0.1.0
+         │       │   └── pl-cli v0.1.0 (*)
+         │       └── pl-seed v0.1.0
+         │           ├── pl-api v0.1.0 (*)
+         │           ├── pl-cli v0.1.0 (*)
+         │           └── pl-evaluation v0.1.0 (*)
+         ├── pl-embedding v0.1.0
+         │   ├── pl-orchestrator v0.1.0 (*)
+         │   └── pl-ruvector v0.1.0
+         │       ├── pl-orchestrator v0.1.0 (*)
+         │       └── pl-recall v0.1.0
+         │           └── pl-orchestrator v0.1.0 (*)
+         ├── pl-repository v0.1.0
+         │   ├── pl-api v0.1.0 (*)
+         │   ├── pl-cli v0.1.0 (*)
+         │   ├── pl-evaluation v0.1.0 (*)
+         │   ├── pl-orchestrator v0.1.0 (*)
+         │   └── pl-seed v0.1.0 (*)
+         └── ruvector-core v2.4.0
+             └── pl-ruvector v0.1.0 (*)
+   ├ cpufeatures v0.3.1
+     └── chacha20 v0.10.2
+         └── rand v0.10.3
+             └── hnsw_rs v0.3.5
+                 └── ruvector-core v2.4.0
+                     └── pl-ruvector v0.1.0
+                         ├── pl-orchestrator v0.1.0
+                         │   ├── pl-api v0.1.0
+                         │   │   └── pl-cli v0.1.0
+                         │   ├── pl-cli v0.1.0 (*)
+                         │   ├── pl-evaluation v0.1.0
+                         │   │   └── pl-cli v0.1.0 (*)
+                         │   └── pl-seed v0.1.0
+                         │       ├── pl-api v0.1.0 (*)
+                         │       ├── pl-cli v0.1.0 (*)
+                         │       └── pl-evaluation v0.1.0 (*)
+                         └── pl-recall v0.1.0
+                             └── pl-orchestrator v0.1.0 (*)
+
+warning[duplicate]: found 3 duplicate entries for crate 'getrandom'
+   ┌─ /home/ruv/work/purpose-lattice/Cargo.lock:68:1
+   │
+68 │ ╭ getrandom 0.2.17 registry+https://github.com/rust-lang/crates.io-index
+69 │ │ getrandom 0.3.4 registry+https://github.com/rust-lang/crates.io-index
+70 │ │ getrandom 0.4.3 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰─────────────────────────────────────────────────────────────────────┘ lock entries
+   │
+   ├ getrandom v0.2.17
+     ├── const-random-macro v0.1.16
+     │   └── const-random v0.1.18
+     │       └── ahash v0.8.12
+     │           └── arrow-array v60.0.0
+     │               └── pl-arrow v0.1.0
+     │                   ├── pl-orchestrator v0.1.0
+     │                   │   ├── pl-api v0.1.0
+     │                   │   │   └── pl-cli v0.1.0
+     │                   │   ├── pl-cli v0.1.0 (*)
+     │                   │   ├── pl-evaluation v0.1.0
+     │                   │   │   └── pl-cli v0.1.0 (*)
+     │                   │   └── pl-seed v0.1.0
+     │                   │       ├── pl-api v0.1.0 (*)
+     │                   │       ├── pl-cli v0.1.0 (*)
+     │                   │       └── pl-evaluation v0.1.0 (*)
+     │                   └── pl-policy v0.1.0
+     │                       └── pl-orchestrator v0.1.0 (*)
+     └── rand_core v0.6.4
+         ├── rand v0.8.8
+         │   ├── rand_distr v0.4.3
+         │   │   └── ruvector-core v2.4.0
+         │   │       └── pl-ruvector v0.1.0
+         │   │           ├── pl-orchestrator v0.1.0 (*)
+         │   │           └── pl-recall v0.1.0
+         │   │               └── pl-orchestrator v0.1.0 (*)
+         │   └── ruvector-core v2.4.0 (*)
+         └── rand_chacha v0.3.1
+             └── rand v0.8.8 (*)
+   ├ getrandom v0.3.4
+     └── ahash v0.8.12
+         └── arrow-array v60.0.0
+             └── pl-arrow v0.1.0
+                 ├── pl-orchestrator v0.1.0
+                 │   ├── pl-api v0.1.0
+                 │   │   └── pl-cli v0.1.0
+                 │   ├── pl-cli v0.1.0 (*)
+                 │   ├── pl-evaluation v0.1.0
+                 │   │   └── pl-cli v0.1.0 (*)
+                 │   └── pl-seed v0.1.0
+                 │       ├── pl-api v0.1.0 (*)
+                 │       ├── pl-cli v0.1.0 (*)
+                 │       └── pl-evaluation v0.1.0 (*)
+                 └── pl-policy v0.1.0
+                     └── pl-orchestrator v0.1.0 (*)
+   ├ getrandom v0.4.3
+     ├── rand v0.10.3
+     │   └── hnsw_rs v0.3.5
+     │       └── ruvector-core v2.4.0
+     │           └── pl-ruvector v0.1.0
+     │               ├── pl-orchestrator v0.1.0
+     │               │   ├── pl-api v0.1.0
+     │               │   │   └── pl-cli v0.1.0
+     │               │   ├── pl-cli v0.1.0 (*)
+     │               │   ├── pl-evaluation v0.1.0
+     │               │   │   └── pl-cli v0.1.0 (*)
+     │               │   └── pl-seed v0.1.0
+     │               │       ├── pl-api v0.1.0 (*)
+     │               │       ├── pl-cli v0.1.0 (*)
+     │               │       └── pl-evaluation v0.1.0 (*)
+     │               └── pl-recall v0.1.0
+     │                   └── pl-orchestrator v0.1.0 (*)
+     ├── tempfile v3.27.0
+     │   ├── pl-cli v0.1.0 (*)
+     │   ├── pl-evaluation v0.1.0 (*)
+     │   ├── (dev) pl-orchestrator v0.1.0 (*)
+     │   └── (dev) pl-rvf v0.1.0
+     │       └── pl-repository v0.1.0
+     │           ├── pl-api v0.1.0 (*)
+     │           ├── pl-cli v0.1.0 (*)
+     │           ├── pl-evaluation v0.1.0 (*)
+     │           ├── pl-orchestrator v0.1.0 (*)
+     │           └── pl-seed v0.1.0 (*)
+     └── uuid v1.29.0
+         ├── ruvector-core v2.4.0 (*)
+         └── tower-http v0.6.11
+             └── pl-api v0.1.0 (*)
+
+warning[duplicate]: found 3 duplicate entries for crate 'hashbrown'
+   ┌─ /home/ruv/work/purpose-lattice/Cargo.lock:72:1
+   │
+72 │ ╭ hashbrown 0.14.5 registry+https://github.com/rust-lang/crates.io-index
+73 │ │ hashbrown 0.15.5 registry+https://github.com/rust-lang/crates.io-index
+74 │ │ hashbrown 0.17.1 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰──────────────────────────────────────────────────────────────────────┘ lock entries
+   │
+   ├ hashbrown v0.14.5
+     └── dashmap v6.2.1
+         └── ruvector-core v2.4.0
+             └── pl-ruvector v0.1.0
+                 ├── pl-orchestrator v0.1.0
+                 │   ├── pl-api v0.1.0
+                 │   │   └── pl-cli v0.1.0
+                 │   ├── pl-cli v0.1.0 (*)
+                 │   ├── pl-evaluation v0.1.0
+                 │   │   └── pl-cli v0.1.0 (*)
+                 │   └── pl-seed v0.1.0
+                 │       ├── pl-api v0.1.0 (*)
+                 │       ├── pl-cli v0.1.0 (*)
+                 │       └── pl-evaluation v0.1.0 (*)
+                 └── pl-recall v0.1.0
+                     └── pl-orchestrator v0.1.0 (*)
+   ├ hashbrown v0.15.5
+     └── hnsw_rs v0.3.5
+         └── ruvector-core v2.4.0
+             └── pl-ruvector v0.1.0
+                 ├── pl-orchestrator v0.1.0
+                 │   ├── pl-api v0.1.0
+                 │   │   └── pl-cli v0.1.0
+                 │   ├── pl-cli v0.1.0 (*)
+                 │   ├── pl-evaluation v0.1.0
+                 │   │   └── pl-cli v0.1.0 (*)
+                 │   └── pl-seed v0.1.0
+                 │       ├── pl-api v0.1.0 (*)
+                 │       ├── pl-cli v0.1.0 (*)
+                 │       └── pl-evaluation v0.1.0 (*)
+                 └── pl-recall v0.1.0
+                     └── pl-orchestrator v0.1.0 (*)
+   ├ hashbrown v0.17.1
+     ├── arrow-array v60.0.0
+     │   └── pl-arrow v0.1.0
+     │       ├── pl-orchestrator v0.1.0
+     │       │   ├── pl-api v0.1.0
+     │       │   │   └── pl-cli v0.1.0
+     │       │   ├── pl-cli v0.1.0 (*)
+     │       │   ├── pl-evaluation v0.1.0
+     │       │   │   └── pl-cli v0.1.0 (*)
+     │       │   └── pl-seed v0.1.0
+     │       │       ├── pl-api v0.1.0 (*)
+     │       │       ├── pl-cli v0.1.0 (*)
+     │       │       └── pl-evaluation v0.1.0 (*)
+     │       └── pl-policy v0.1.0
+     │           └── pl-orchestrator v0.1.0 (*)
+     ├── indexmap v2.14.2
+     │   └── hnsw_rs v0.3.5
+     │       └── ruvector-core v2.4.0
+     │           └── pl-ruvector v0.1.0
+     │               ├── pl-orchestrator v0.1.0 (*)
+     │               └── pl-recall v0.1.0
+     │                   └── pl-orchestrator v0.1.0 (*)
+     └── rkyv v0.8.18
+         └── ruvector-core v2.4.0 (*)
+
+warning[license-not-encountered]: license was not encountered
+  ┌─ /home/ruv/work/purpose-lattice/deny.toml:6:94
+  │
+6 │ allow = ["MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "ISC", "Unicode-3.0", "Zlib", "CDLA-Permissive-2.0", "CC0-1.0"]
+  │                                                                                              ━━━━━━━━━━━━━━━━━━━ unmatched license allowance
+
+warning[license-not-encountered]: license was not encountered
+  ┌─ /home/ruv/work/purpose-lattice/deny.toml:6:64
+  │
+6 │ allow = ["MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "ISC", "Unicode-3.0", "Zlib", "CDLA-Permissive-2.0", "CC0-1.0"]
+  │                                                                ━━━ unmatched license allowance
+
+warning[duplicate]: found 2 duplicate entries for crate 'r-efi'
+    ┌─ /home/ruv/work/purpose-lattice/Cargo.lock:155:1
+    │
+155 │ ╭ r-efi 5.3.0 registry+https://github.com/rust-lang/crates.io-index
+156 │ │ r-efi 6.0.0 registry+https://github.com/rust-lang/crates.io-index
+    │ ╰─────────────────────────────────────────────────────────────────┘ lock entries
+    │
+    ├ r-efi v5.3.0
+      └── getrandom v0.3.4
+          └── ahash v0.8.12
+              └── arrow-array v60.0.0
+                  └── pl-arrow v0.1.0
+                      ├── pl-orchestrator v0.1.0
+                      │   ├── pl-api v0.1.0
+                      │   │   └── pl-cli v0.1.0
+                      │   ├── pl-cli v0.1.0 (*)
+                      │   ├── pl-evaluation v0.1.0
+                      │   │   └── pl-cli v0.1.0 (*)
+                      │   └── pl-seed v0.1.0
+                      │       ├── pl-api v0.1.0 (*)
+                      │       ├── pl-cli v0.1.0 (*)
+                      │       └── pl-evaluation v0.1.0 (*)
+                      └── pl-policy v0.1.0
+                          └── pl-orchestrator v0.1.0 (*)
+    ├ r-efi v6.0.0
+      └── getrandom v0.4.3
+          ├── rand v0.10.3
+          │   └── hnsw_rs v0.3.5
+          │       └── ruvector-core v2.4.0
+          │           └── pl-ruvector v0.1.0
+          │               ├── pl-orchestrator v0.1.0
+          │               │   ├── pl-api v0.1.0
+          │               │   │   └── pl-cli v0.1.0
+          │               │   ├── pl-cli v0.1.0 (*)
+          │               │   ├── pl-evaluation v0.1.0
+          │               │   │   └── pl-cli v0.1.0 (*)
+          │               │   └── pl-seed v0.1.0
+          │               │       ├── pl-api v0.1.0 (*)
+          │               │       ├── pl-cli v0.1.0 (*)
+          │               │       └── pl-evaluation v0.1.0 (*)
+          │               └── pl-recall v0.1.0
+          │                   └── pl-orchestrator v0.1.0 (*)
+          ├── tempfile v3.27.0
+          │   ├── pl-cli v0.1.0 (*)
+          │   ├── pl-evaluation v0.1.0 (*)
+          │   ├── (dev) pl-orchestrator v0.1.0 (*)
+          │   └── (dev) pl-rvf v0.1.0
+          │       └── pl-repository v0.1.0
+          │           ├── pl-api v0.1.0 (*)
+          │           ├── pl-cli v0.1.0 (*)
+          │           ├── pl-evaluation v0.1.0 (*)
+          │           ├── pl-orchestrator v0.1.0 (*)
+          │           └── pl-seed v0.1.0 (*)
+          └── uuid v1.29.0
+              ├── ruvector-core v2.4.0 (*)
+              └── tower-http v0.6.11
+                  └── pl-api v0.1.0 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'rand'
+    ┌─ /home/ruv/work/purpose-lattice/Cargo.lock:158:1
+    │
+158 │ ╭ rand 0.8.8 registry+https://github.com/rust-lang/crates.io-index
+159 │ │ rand 0.10.3 registry+https://github.com/rust-lang/crates.io-index
+    │ ╰─────────────────────────────────────────────────────────────────┘ lock entries
+    │
+    ├ rand v0.8.8
+      ├── rand_distr v0.4.3
+      │   └── ruvector-core v2.4.0
+      │       └── pl-ruvector v0.1.0
+      │           ├── pl-orchestrator v0.1.0
+      │           │   ├── pl-api v0.1.0
+      │           │   │   └── pl-cli v0.1.0
+      │           │   ├── pl-cli v0.1.0 (*)
+      │           │   ├── pl-evaluation v0.1.0
+      │           │   │   └── pl-cli v0.1.0 (*)
+      │           │   └── pl-seed v0.1.0
+      │           │       ├── pl-api v0.1.0 (*)
+      │           │       ├── pl-cli v0.1.0 (*)
+      │           │       └── pl-evaluation v0.1.0 (*)
+      │           └── pl-recall v0.1.0
+      │               └── pl-orchestrator v0.1.0 (*)
+      └── ruvector-core v2.4.0 (*)
+    ├ rand v0.10.3
+      └── hnsw_rs v0.3.5
+          └── ruvector-core v2.4.0
+              └── pl-ruvector v0.1.0
+                  ├── pl-orchestrator v0.1.0
+                  │   ├── pl-api v0.1.0
+                  │   │   └── pl-cli v0.1.0
+                  │   ├── pl-cli v0.1.0 (*)
+                  │   ├── pl-evaluation v0.1.0
+                  │   │   └── pl-cli v0.1.0 (*)
+                  │   └── pl-seed v0.1.0
+                  │       ├── pl-api v0.1.0 (*)
+                  │       ├── pl-cli v0.1.0 (*)
+                  │       └── pl-evaluation v0.1.0 (*)
+                  └── pl-recall v0.1.0
+                      └── pl-orchestrator v0.1.0 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'rand_core'
+    ┌─ /home/ruv/work/purpose-lattice/Cargo.lock:161:1
+    │
+161 │ ╭ rand_core 0.6.4 registry+https://github.com/rust-lang/crates.io-index
+162 │ │ rand_core 0.10.1 registry+https://github.com/rust-lang/crates.io-index
+    │ ╰──────────────────────────────────────────────────────────────────────┘ lock entries
+    │
+    ├ rand_core v0.6.4
+      ├── rand v0.8.8
+      │   ├── rand_distr v0.4.3
+      │   │   └── ruvector-core v2.4.0
+      │   │       └── pl-ruvector v0.1.0
+      │   │           ├── pl-orchestrator v0.1.0
+      │   │           │   ├── pl-api v0.1.0
+      │   │           │   │   └── pl-cli v0.1.0
+      │   │           │   ├── pl-cli v0.1.0 (*)
+      │   │           │   ├── pl-evaluation v0.1.0
+      │   │           │   │   └── pl-cli v0.1.0 (*)
+      │   │           │   └── pl-seed v0.1.0
+      │   │           │       ├── pl-api v0.1.0 (*)
+      │   │           │       ├── pl-cli v0.1.0 (*)
+      │   │           │       └── pl-evaluation v0.1.0 (*)
+      │   │           └── pl-recall v0.1.0
+      │   │               └── pl-orchestrator v0.1.0 (*)
+      │   └── ruvector-core v2.4.0 (*)
+      └── rand_chacha v0.3.1
+          └── rand v0.8.8 (*)
+    ├ rand_core v0.10.1
+      ├── chacha20 v0.10.2
+      │   └── rand v0.10.3
+      │       └── hnsw_rs v0.3.5
+      │           └── ruvector-core v2.4.0
+      │               └── pl-ruvector v0.1.0
+      │                   ├── pl-orchestrator v0.1.0
+      │                   │   ├── pl-api v0.1.0
+      │                   │   │   └── pl-cli v0.1.0
+      │                   │   ├── pl-cli v0.1.0 (*)
+      │                   │   ├── pl-evaluation v0.1.0
+      │                   │   │   └── pl-cli v0.1.0 (*)
+      │                   │   └── pl-seed v0.1.0
+      │                   │       ├── pl-api v0.1.0 (*)
+      │                   │       ├── pl-cli v0.1.0 (*)
+      │                   │       └── pl-evaluation v0.1.0 (*)
+      │                   └── pl-recall v0.1.0
+      │                       └── pl-orchestrator v0.1.0 (*)
+      ├── getrandom v0.4.3
+      │   ├── rand v0.10.3 (*)
+      │   ├── tempfile v3.27.0
+      │   │   ├── pl-cli v0.1.0 (*)
+      │   │   ├── pl-evaluation v0.1.0 (*)
+      │   │   ├── (dev) pl-orchestrator v0.1.0 (*)
+      │   │   └── (dev) pl-rvf v0.1.0
+      │   │       └── pl-repository v0.1.0
+      │   │           ├── pl-api v0.1.0 (*)
+      │   │           ├── pl-cli v0.1.0 (*)
+      │   │           ├── pl-evaluation v0.1.0 (*)
+      │   │           ├── pl-orchestrator v0.1.0 (*)
+      │   │           └── pl-seed v0.1.0 (*)
+      │   └── uuid v1.29.0
+      │       ├── ruvector-core v2.4.0 (*)
+      │       └── tower-http v0.6.11
+      │           └── pl-api v0.1.0 (*)
+      └── rand v0.10.3 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'syn'
+    ┌─ /home/ruv/work/purpose-lattice/Cargo.lock:200:1
+    │
+200 │ ╭ syn 2.0.119 registry+https://github.com/rust-lang/crates.io-index
+201 │ │ syn 3.0.9 registry+https://github.com/rust-lang/crates.io-index
+    │ ╰───────────────────────────────────────────────────────────────┘ lock entries
+    │
+    ├ syn v2.0.119
+      ├── enum-as-inner v0.6.1
+      │   └── sysctl v0.6.0
+      │       └── mmap-rs v0.7.0
+      │           └── hnsw_rs v0.3.5
+      │               └── ruvector-core v2.4.0
+      │                   └── pl-ruvector v0.1.0
+      │                       ├── pl-orchestrator v0.1.0
+      │                       │   ├── pl-api v0.1.0
+      │                       │   │   └── pl-cli v0.1.0
+      │                       │   ├── pl-cli v0.1.0 (*)
+      │                       │   ├── pl-evaluation v0.1.0
+      │                       │   │   └── pl-cli v0.1.0 (*)
+      │                       │   └── pl-seed v0.1.0
+      │                       │       ├── pl-api v0.1.0 (*)
+      │                       │       ├── pl-cli v0.1.0 (*)
+      │                       │       └── pl-evaluation v0.1.0 (*)
+      │                       └── pl-recall v0.1.0
+      │                           └── pl-orchestrator v0.1.0 (*)
+      ├── munge_macro v0.4.7
+      │   └── munge v0.4.7
+      │       └── rkyv v0.8.18
+      │           └── ruvector-core v2.4.0 (*)
+      ├── thiserror-impl v1.0.69
+      │   └── thiserror v1.0.69
+      │       └── sysctl v0.6.0 (*)
+      ├── tracing-attributes v0.1.31
+      │   └── tracing v0.1.44
+      │       ├── axum v0.8.9
+      │       │   └── pl-api v0.1.0 (*)
+      │       ├── axum-core v0.5.6
+      │       │   └── axum v0.8.9 (*)
+      │       ├── pl-api v0.1.0 (*)
+      │       ├── ruvector-core v2.4.0 (*)
+      │       ├── tower v0.5.3
+      │       │   └── axum v0.8.9 (*)
+      │       ├── tower-http v0.6.11
+      │       │   └── pl-api v0.1.0 (*)
+      │       └── tracing-subscriber v0.3.23
+      │           └── pl-cli v0.1.0 (*)
+      ├── windows-implement v0.60.2
+      │   └── windows-core v0.62.2
+      │       └── iana-time-zone v0.1.65
+      │           └── chrono v0.4.45
+      │               ├── arrow-array v60.0.0
+      │               │   └── pl-arrow v0.1.0
+      │               │       ├── pl-orchestrator v0.1.0 (*)
+      │               │       └── pl-policy v0.1.0
+      │               │           └── pl-orchestrator v0.1.0 (*)
+      │               ├── pl-audit v0.1.0
+      │               │   └── pl-orchestrator v0.1.0 (*)
+      │               └── ruvector-core v2.4.0 (*)
+      ├── windows-interface v0.59.3
+      │   └── windows-core v0.62.2 (*)
+      └── zerocopy-derive v0.8.63
+          └── zerocopy v0.8.63
+              ├── ahash v0.8.12
+              │   └── arrow-array v60.0.0 (*)
+              ├── half v2.7.1
+              │   ├── arrow-array v60.0.0 (*)
+              │   ├── arrow-buffer v60.0.0
+              │   │   ├── arrow-array v60.0.0 (*)
+              │   │   └── arrow-data v60.0.0
+              │   │       └── arrow-array v60.0.0 (*)
+              │   └── arrow-data v60.0.0 (*)
+              └── ppv-lite86 v0.2.21
+                  └── rand_chacha v0.3.1
+                      └── rand v0.8.8
+                          ├── rand_distr v0.4.3
+                          │   └── ruvector-core v2.4.0 (*)
+                          └── ruvector-core v2.4.0 (*)
+    ├ syn v3.0.9
+      ├── bytecheck_derive v0.8.3
+      │   └── bytecheck v0.8.3
+      │       ├── rend v0.5.4
+      │       │   └── rkyv v0.8.18
+      │       │       └── ruvector-core v2.4.0
+      │       │           └── pl-ruvector v0.1.0
+      │       │               ├── pl-orchestrator v0.1.0
+      │       │               │   ├── pl-api v0.1.0
+      │       │               │   │   └── pl-cli v0.1.0
+      │       │               │   ├── pl-cli v0.1.0 (*)
+      │       │               │   ├── pl-evaluation v0.1.0
+      │       │               │   │   └── pl-cli v0.1.0 (*)
+      │       │               │   └── pl-seed v0.1.0
+      │       │               │       ├── pl-api v0.1.0 (*)
+      │       │               │       ├── pl-cli v0.1.0 (*)
+      │       │               │       └── pl-evaluation v0.1.0 (*)
+      │       │               └── pl-recall v0.1.0
+      │       │                   └── pl-orchestrator v0.1.0 (*)
+      │       └── rkyv v0.8.18 (*)
+      ├── clap_derive v4.6.7
+      │   └── clap v4.6.7
+      │       └── pl-cli v0.1.0 (*)
+      ├── ptr_meta_derive v0.3.2
+      │   └── ptr_meta v0.3.2
+      │       ├── bytecheck v0.8.3 (*)
+      │       ├── rancor v0.1.3
+      │       │   ├── bytecheck v0.8.3 (*)
+      │       │   └── rkyv v0.8.18 (*)
+      │       └── rkyv v0.8.18 (*)
+      ├── rkyv_derive v0.8.18
+      │   └── rkyv v0.8.18 (*)
+      ├── serde_derive v1.0.229
+      │   └── serde v1.0.229
+      │       ├── bincode v2.0.1
+      │       │   └── ruvector-core v2.4.0 (*)
+      │       ├── chrono v0.4.45
+      │       │   ├── arrow-array v60.0.0
+      │       │   │   └── pl-arrow v0.1.0
+      │       │   │       ├── pl-orchestrator v0.1.0 (*)
+      │       │   │       └── pl-policy v0.1.0
+      │       │   │           └── pl-orchestrator v0.1.0 (*)
+      │       │   ├── pl-audit v0.1.0
+      │       │   │   └── pl-orchestrator v0.1.0 (*)
+      │       │   └── ruvector-core v2.4.0 (*)
+      │       ├── hnsw_rs v0.3.5
+      │       │   └── ruvector-core v2.4.0 (*)
+      │       ├── ndarray v0.16.1
+      │       │   └── ruvector-core v2.4.0 (*)
+      │       ├── pl-api v0.1.0 (*)
+      │       ├── pl-covenant v0.1.0
+      │       │   ├── pl-orchestrator v0.1.0 (*)
+      │       │   └── pl-policy v0.1.0 (*)
+      │       ├── pl-errors v0.1.0
+      │       │   ├── pl-api v0.1.0 (*)
+      │       │   ├── pl-arrow v0.1.0 (*)
+      │       │   ├── pl-audit v0.1.0 (*)
+      │       │   ├── pl-auth v0.1.0
+      │       │   │   └── pl-api v0.1.0 (*)
+      │       │   ├── pl-calibration v0.1.0
+      │       │   │   └── pl-orchestrator v0.1.0 (*)
+      │       │   ├── pl-cli v0.1.0 (*)
+      │       │   ├── pl-config v0.1.0
+      │       │   │   ├── pl-api v0.1.0 (*)
+      │       │   │   └── pl-cli v0.1.0 (*)
+      │       │   ├── pl-covenant v0.1.0 (*)
+      │       │   ├── pl-evaluation v0.1.0 (*)
+      │       │   ├── pl-middleware v0.1.0
+      │       │   │   └── pl-api v0.1.0 (*)
+      │       │   ├── pl-orchestrator v0.1.0 (*)
+      │       │   ├── pl-plan v0.1.0
+      │       │   │   ├── pl-api v0.1.0 (*)
+      │       │   │   ├── pl-arrow v0.1.0 (*)
+      │       │   │   ├── pl-cli v0.1.0 (*)
+      │       │   │   ├── pl-embedding v0.1.0
+      │       │   │   │   ├── pl-orchestrator v0.1.0 (*)
+      │       │   │   │   └── pl-ruvector v0.1.0 (*)
+      │       │   │   ├── pl-evaluation v0.1.0 (*)
+      │       │   │   ├── pl-orchestrator v0.1.0 (*)
+      │       │   │   └── pl-policy v0.1.0 (*)
+      │       │   ├── pl-policy v0.1.0 (*)
+      │       │   ├── pl-recall v0.1.0 (*)
+      │       │   ├── pl-repository v0.1.0
+      │       │   │   ├── pl-api v0.1.0 (*)
+      │       │   │   ├── pl-cli v0.1.0 (*)
+      │       │   │   ├── pl-evaluation v0.1.0 (*)
+      │       │   │   ├── pl-orchestrator v0.1.0 (*)
+      │       │   │   └── pl-seed v0.1.0 (*)
+      │       │   ├── pl-retention v0.1.0
+      │       │   │   └── pl-orchestrator v0.1.0 (*)
+      │       │   ├── pl-ruvector v0.1.0 (*)
+      │       │   ├── pl-rvf v0.1.0
+      │       │   │   └── pl-repository v0.1.0 (*)
+      │       │   └── pl-seed v0.1.0 (*)
+      │       ├── pl-orchestrator v0.1.0 (*)
+      │       ├── pl-plan v0.1.0 (*)
+      │       ├── pl-types v0.1.0
+      │       │   ├── pl-audit v0.1.0 (*)
+      │       │   ├── pl-covenant v0.1.0 (*)
+      │       │   ├── pl-evaluation v0.1.0 (*)
+      │       │   ├── pl-orchestrator v0.1.0 (*)
+      │       │   ├── pl-plan v0.1.0 (*)
+      │       │   ├── pl-policy v0.1.0 (*)
+      │       │   ├── pl-recall v0.1.0 (*)
+      │       │   ├── pl-repository v0.1.0 (*)
+      │       │   ├── pl-risk v0.1.0
+      │       │   │   └── pl-orchestrator v0.1.0 (*)
+      │       │   ├── pl-ruvector v0.1.0 (*)
+      │       │   ├── pl-seed v0.1.0 (*)
+      │       │   └── pl-taint v0.1.0
+      │       │       └── pl-orchestrator v0.1.0 (*)
+      │       ├── ruvector-core v2.4.0 (*)
+      │       ├── ruvector-turboquant v2.3.0
+      │       │   └── ruvector-core v2.4.0 (*)
+      │       └── serde_urlencoded v0.7.1
+      │           └── axum v0.8.9
+      │               └── pl-api v0.1.0 (*)
+      ├── thiserror-impl v2.0.21
+      │   └── thiserror v2.0.21
+      │       ├── mmap-rs v0.7.0
+      │       │   └── hnsw_rs v0.3.5 (*)
+      │       ├── pl-errors v0.1.0 (*)
+      │       ├── ruvector-core v2.4.0 (*)
+      │       └── ruvector-turboquant v2.3.0 (*)
+      ├── tokio-macros v2.7.2
+      │   └── tokio v1.54.1
+      │       ├── axum v0.8.9 (*)
+      │       ├── hyper v1.12.0
+      │       │   ├── axum v0.8.9 (*)
+      │       │   └── hyper-util v0.1.21
+      │       │       └── axum v0.8.9 (*)
+      │       ├── hyper-util v0.1.21 (*)
+      │       ├── pl-api v0.1.0 (*)
+      │       ├── pl-cli v0.1.0 (*)
+      │       └── tower v0.5.3
+      │           └── axum v0.8.9 (*)
+      └── wasm-bindgen-macro-support v0.2.129
+          └── wasm-bindgen-macro v0.2.129
+              └── wasm-bindgen v0.2.129
+                  ├── chrono v0.4.45 (*)
+                  ├── iana-time-zone v0.1.65
+                  │   └── chrono v0.4.45 (*)
+                  ├── js-sys v0.3.106
+                  │   ├── chrono v0.4.45 (*)
+                  │   ├── iana-time-zone v0.1.65 (*)
+                  │   └── uuid v1.29.0
+                  │       ├── ruvector-core v2.4.0 (*)
+                  │       └── tower-http v0.6.11
+                  │           └── pl-api v0.1.0 (*)
+                  └── uuid v1.29.0 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'thiserror'
+    ┌─ /home/ruv/work/purpose-lattice/Cargo.lock:205:1
+    │
+205 │ ╭ thiserror 1.0.69 registry+https://github.com/rust-lang/crates.io-index
+206 │ │ thiserror 2.0.21 registry+https://github.com/rust-lang/crates.io-index
+    │ ╰──────────────────────────────────────────────────────────────────────┘ lock entries
+    │
+    ├ thiserror v1.0.69
+      └── sysctl v0.6.0
+          └── mmap-rs v0.7.0
+              └── hnsw_rs v0.3.5
+                  └── ruvector-core v2.4.0
+                      └── pl-ruvector v0.1.0
+                          ├── pl-orchestrator v0.1.0
+                          │   ├── pl-api v0.1.0
+                          │   │   └── pl-cli v0.1.0
+                          │   ├── pl-cli v0.1.0 (*)
+                          │   ├── pl-evaluation v0.1.0
+                          │   │   └── pl-cli v0.1.0 (*)
+                          │   └── pl-seed v0.1.0
+                          │       ├── pl-api v0.1.0 (*)
+                          │       ├── pl-cli v0.1.0 (*)
+                          │       └── pl-evaluation v0.1.0 (*)
+                          └── pl-recall v0.1.0
+                              └── pl-orchestrator v0.1.0 (*)
+    ├ thiserror v2.0.21
+      ├── mmap-rs v0.7.0
+      │   └── hnsw_rs v0.3.5
+      │       └── ruvector-core v2.4.0
+      │           └── pl-ruvector v0.1.0
+      │               ├── pl-orchestrator v0.1.0
+      │               │   ├── pl-api v0.1.0
+      │               │   │   └── pl-cli v0.1.0
+      │               │   ├── pl-cli v0.1.0 (*)
+      │               │   ├── pl-evaluation v0.1.0
+      │               │   │   └── pl-cli v0.1.0 (*)
+      │               │   └── pl-seed v0.1.0
+      │               │       ├── pl-api v0.1.0 (*)
+      │               │       ├── pl-cli v0.1.0 (*)
+      │               │       └── pl-evaluation v0.1.0 (*)
+      │               └── pl-recall v0.1.0
+      │                   └── pl-orchestrator v0.1.0 (*)
+      ├── pl-errors v0.1.0
+      │   ├── pl-api v0.1.0 (*)
+      │   ├── pl-arrow v0.1.0
+      │   │   ├── pl-orchestrator v0.1.0 (*)
+      │   │   └── pl-policy v0.1.0
+      │   │       └── pl-orchestrator v0.1.0 (*)
+      │   ├── pl-audit v0.1.0
+      │   │   └── pl-orchestrator v0.1.0 (*)
+      │   ├── pl-auth v0.1.0
+      │   │   └── pl-api v0.1.0 (*)
+      │   ├── pl-calibration v0.1.0
+      │   │   └── pl-orchestrator v0.1.0 (*)
+      │   ├── pl-cli v0.1.0 (*)
+      │   ├── pl-config v0.1.0
+      │   │   ├── pl-api v0.1.0 (*)
+      │   │   └── pl-cli v0.1.0 (*)
+      │   ├── pl-covenant v0.1.0
+      │   │   ├── pl-orchestrator v0.1.0 (*)
+      │   │   └── pl-policy v0.1.0 (*)
+      │   ├── pl-evaluation v0.1.0 (*)
+      │   ├── pl-middleware v0.1.0
+      │   │   └── pl-api v0.1.0 (*)
+      │   ├── pl-orchestrator v0.1.0 (*)
+      │   ├── pl-plan v0.1.0
+      │   │   ├── pl-api v0.1.0 (*)
+      │   │   ├── pl-arrow v0.1.0 (*)
+      │   │   ├── pl-cli v0.1.0 (*)
+      │   │   ├── pl-embedding v0.1.0
+      │   │   │   ├── pl-orchestrator v0.1.0 (*)
+      │   │   │   └── pl-ruvector v0.1.0 (*)
+      │   │   ├── pl-evaluation v0.1.0 (*)
+      │   │   ├── pl-orchestrator v0.1.0 (*)
+      │   │   └── pl-policy v0.1.0 (*)
+      │   ├── pl-policy v0.1.0 (*)
+      │   ├── pl-recall v0.1.0 (*)
+      │   ├── pl-repository v0.1.0
+      │   │   ├── pl-api v0.1.0 (*)
+      │   │   ├── pl-cli v0.1.0 (*)
+      │   │   ├── pl-evaluation v0.1.0 (*)
+      │   │   ├── pl-orchestrator v0.1.0 (*)
+      │   │   └── pl-seed v0.1.0 (*)
+      │   ├── pl-retention v0.1.0
+      │   │   └── pl-orchestrator v0.1.0 (*)
+      │   ├── pl-ruvector v0.1.0 (*)
+      │   ├── pl-rvf v0.1.0
+      │   │   └── pl-repository v0.1.0 (*)
+      │   └── pl-seed v0.1.0 (*)
+      ├── ruvector-core v2.4.0 (*)
+      └── ruvector-turboquant v2.3.0
+          └── ruvector-core v2.4.0 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'thiserror-impl'
+    ┌─ /home/ruv/work/purpose-lattice/Cargo.lock:207:1
+    │
+207 │ ╭ thiserror-impl 1.0.69 registry+https://github.com/rust-lang/crates.io-index
+208 │ │ thiserror-impl 2.0.21 registry+https://github.com/rust-lang/crates.io-index
+    │ ╰───────────────────────────────────────────────────────────────────────────┘ lock entries
+    │
+    ├ thiserror-impl v1.0.69
+      └── thiserror v1.0.69
+          └── sysctl v0.6.0
+              └── mmap-rs v0.7.0
+                  └── hnsw_rs v0.3.5
+                      └── ruvector-core v2.4.0
+                          └── pl-ruvector v0.1.0
+                              ├── pl-orchestrator v0.1.0
+                              │   ├── pl-api v0.1.0
+                              │   │   └── pl-cli v0.1.0
+                              │   ├── pl-cli v0.1.0 (*)
+                              │   ├── pl-evaluation v0.1.0
+                              │   │   └── pl-cli v0.1.0 (*)
+                              │   └── pl-seed v0.1.0
+                              │       ├── pl-api v0.1.0 (*)
+                              │       ├── pl-cli v0.1.0 (*)
+                              │       └── pl-evaluation v0.1.0 (*)
+                              └── pl-recall v0.1.0
+                                  └── pl-orchestrator v0.1.0 (*)
+    ├ thiserror-impl v2.0.21
+      └── thiserror v2.0.21
+          ├── mmap-rs v0.7.0
+          │   └── hnsw_rs v0.3.5
+          │       └── ruvector-core v2.4.0
+          │           └── pl-ruvector v0.1.0
+          │               ├── pl-orchestrator v0.1.0
+          │               │   ├── pl-api v0.1.0
+          │               │   │   └── pl-cli v0.1.0
+          │               │   ├── pl-cli v0.1.0 (*)
+          │               │   ├── pl-evaluation v0.1.0
+          │               │   │   └── pl-cli v0.1.0 (*)
+          │               │   └── pl-seed v0.1.0
+          │               │       ├── pl-api v0.1.0 (*)
+          │               │       ├── pl-cli v0.1.0 (*)
+          │               │       └── pl-evaluation v0.1.0 (*)
+          │               └── pl-recall v0.1.0
+          │                   └── pl-orchestrator v0.1.0 (*)
+          ├── pl-errors v0.1.0
+          │   ├── pl-api v0.1.0 (*)
+          │   ├── pl-arrow v0.1.0
+          │   │   ├── pl-orchestrator v0.1.0 (*)
+          │   │   └── pl-policy v0.1.0
+          │   │       └── pl-orchestrator v0.1.0 (*)
+          │   ├── pl-audit v0.1.0
+          │   │   └── pl-orchestrator v0.1.0 (*)
+          │   ├── pl-auth v0.1.0
+          │   │   └── pl-api v0.1.0 (*)
+          │   ├── pl-calibration v0.1.0
+          │   │   └── pl-orchestrator v0.1.0 (*)
+          │   ├── pl-cli v0.1.0 (*)
+          │   ├── pl-config v0.1.0
+          │   │   ├── pl-api v0.1.0 (*)
+          │   │   └── pl-cli v0.1.0 (*)
+          │   ├── pl-covenant v0.1.0
+          │   │   ├── pl-orchestrator v0.1.0 (*)
+          │   │   └── pl-policy v0.1.0 (*)
+          │   ├── pl-evaluation v0.1.0 (*)
+          │   ├── pl-middleware v0.1.0
+          │   │   └── pl-api v0.1.0 (*)
+          │   ├── pl-orchestrator v0.1.0 (*)
+          │   ├── pl-plan v0.1.0
+          │   │   ├── pl-api v0.1.0 (*)
+          │   │   ├── pl-arrow v0.1.0 (*)
+          │   │   ├── pl-cli v0.1.0 (*)
+          │   │   ├── pl-embedding v0.1.0
+          │   │   │   ├── pl-orchestrator v0.1.0 (*)
+          │   │   │   └── pl-ruvector v0.1.0 (*)
+          │   │   ├── pl-evaluation v0.1.0 (*)
+          │   │   ├── pl-orchestrator v0.1.0 (*)
+          │   │   └── pl-policy v0.1.0 (*)
+          │   ├── pl-policy v0.1.0 (*)
+          │   ├── pl-recall v0.1.0 (*)
+          │   ├── pl-repository v0.1.0
+          │   │   ├── pl-api v0.1.0 (*)
+          │   │   ├── pl-cli v0.1.0 (*)
+          │   │   ├── pl-evaluation v0.1.0 (*)
+          │   │   ├── pl-orchestrator v0.1.0 (*)
+          │   │   └── pl-seed v0.1.0 (*)
+          │   ├── pl-retention v0.1.0
+          │   │   └── pl-orchestrator v0.1.0 (*)
+          │   ├── pl-ruvector v0.1.0 (*)
+          │   ├── pl-rvf v0.1.0
+          │   │   └── pl-repository v0.1.0 (*)
+          │   └── pl-seed v0.1.0 (*)
+          ├── ruvector-core v2.4.0 (*)
+          └── ruvector-turboquant v2.3.0
+              └── ruvector-core v2.4.0 (*)
+
+advisories ok, bans ok, licenses ok, sources ok
+
+> purpose-lattice-ui@0.1.0 typecheck
+> tsc --noEmit
+
+
+> purpose-lattice-ui@0.1.0 lint
+> eslint .
+
+
+> purpose-lattice-ui@0.1.0 test
+> vitest run src
+
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.12 [39m[90m/home/ruv/work/purpose-lattice/frontend[39m
+
+ [32m✓[39m src/App.test.tsx [2m([22m[2m1 test[22m[2m)[22m[32m 5[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m   Start at [22m 01:49:47
+[2m   Duration [22m 239ms[2m (transform 26ms, setup 0ms, import 39ms, tests 5ms, environment 0ms)[22m
+
+
+> purpose-lattice-ui@0.1.0 contract
+> node scripts/check-contract.mjs
+
+contract drift: pass
+
+> purpose-lattice-ui@0.1.0 build
+> tsc -b && vite build
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 17 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.16 kB │ gzip:  0.14 kB
+dist/assets/index-CQ6bU5nm.css    1.95 kB │ gzip:  0.88 kB
+dist/assets/index-CcZN5LD_.js   224.61 kB │ gzip: 70.46 kB
+
+✓ built in 291ms
+found 0 vulnerabilities
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+     Running `target/debug/purpose-lattice seed`
+
+> purpose-lattice-ui@0.1.0 e2e
+> playwright test
+
+
+Running 3 tests using 1 worker
+
+  ✓  1 e2e/journeys.spec.ts:1:43 › safe plan reaches real backend and renders result (1.1s)
+  ✓  2 e2e/journeys.spec.ts:1:496 › policy denial has no forbidden effect and corrected plan recovers (794ms)
+  ✓  3 e2e/journeys.spec.ts:1:984 › audit survives backend restart (1.1s)
+
+  3 passed (4.1s)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.10s
+     Running `target/debug/purpose-lattice seed`
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+     Running `target/debug/purpose-lattice seed`
+d36496c86715be3fe3d60784da5b1a7bc246d7200b6ae70deb2296bb2f8d0317  .run/audit-before.json
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
+     Running `target/debug/purpose-lattice ablate`
+combined	0.910	purpose decision + audit + recall
+without_conformal	0.790	no finite-sample drift bound
+without_arrow	0.710	no column-level minimization evidence
+ruvnet_only	0.430	recall and durability without data-plane semantics
+enterprise_only	0.380	columnar analysis without memory or governed decision
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+     Running `target/debug/purpose-lattice benchmark 50`
+runs=50 allowed=50 denied=0 mean_risk=0.1150

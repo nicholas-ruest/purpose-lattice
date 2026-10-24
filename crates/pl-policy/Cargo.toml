@@ -1,0 +1,16 @@
+[package]
+name = "pl-policy"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+pl-arrow = { path = "../pl-arrow" }
+pl-covenant = { path = "../pl-covenant" }
+pl-errors = { path = "../pl-errors" }
+pl-plan = { path = "../pl-plan" }
+pl-types = { path = "../pl-types" }
+
+[lints]
+workspace = true

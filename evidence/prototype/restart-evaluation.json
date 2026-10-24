@@ -1,0 +1,1 @@
+{"dataset_id":"support-cases","decision":"allow","risk_score":0.115,"drift_upper":0.23,"minimization_ratio":1.0,"selected_columns":1,"sensitive_columns":0,"reasons":[],"analogues":[],"receipt":"59c418a72c0100252c3fadce13be80001e6f89bd2293d296518b707ed217e88c","correlation_id":"restart-before"}

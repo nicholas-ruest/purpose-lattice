@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .
+    ports: ["18180:8080"]
+    environment: ["PL_DATA_DIR=/data", "PL_NAMESPACE=prototype"]
+    volumes: ["purpose-data:/data"]
+  ui:
+    build: ./frontend
+    ports: ["14273:80"]
+volumes: {purpose-data: {}}

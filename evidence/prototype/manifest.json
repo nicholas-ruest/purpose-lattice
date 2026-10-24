@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "project": "purpose-lattice",
+  "source_sha": "7ef5e0e5d5c1bea50fb715cb5e94899b37f65c06",
+  "tested_at": "2026-10-24T01:50:00Z",
+  "launch_mode": "governed-ruos-executor-local",
+  "test_namespace": "prototype",
+  "urls": {
+    "ui": "http://127.0.0.1:14273",
+    "api": "http://127.0.0.1:18180",
+    "scope": "ephemeral local only"
+  },
+  "commands": [
+    {"command": "cargo fmt --all -- --check", "exit_code": 0},
+    {"command": "cargo clippy --locked --all-targets --all-features -- -D warnings", "exit_code": 0},
+    {"command": "cargo test --locked --workspace", "exit_code": 0},
+    {"command": "cargo deny check", "exit_code": 0},
+    {"command": "npm run typecheck && npm run lint && npm test && npm run contract && npm run build", "exit_code": 0},
+    {"command": "npm audit --audit-level=high", "exit_code": 0},
+    {"command": "playwright test", "exit_code": 0, "result": "3 passed"},
+    {"command": "scripts/restart-check.sh", "exit_code": 0},
+    {"command": "docker compose build", "exit_code": 127, "result": "Docker CLI unavailable locally; CI gate required"}
+  ],
+  "artifacts": [
+    {"path": "docs/assets/desktop-evaluation.png", "kind": "measured browser screenshot"},
+    {"path": "docs/assets/mobile-audit.png", "kind": "measured browser screenshot"},
+    {"path": "frontend/playwright-report", "kind": "CI artifact, generated"},
+    {"path": "evidence/prototype/restart-audit.sha256", "kind": "measured persistence receipt"},
+    {"path": "evidence/prototype/correlation-trace.json", "kind": "observed call-path description"}
+  ],
+  "integrations": {
+    "ruvector_core_2_4_0": "executed VectorDB insert/search",
+    "rvf_runtime_0_3_2": "executed append/reopen/read",
+    "apache_arrow_60_0_0": "executed RecordBatch column analysis",
+    "cloud_run": "configuration only; not deployed"
+  },
+  "fixtures": "deterministic synthetic support-case covenant via the real seed command"
+}
