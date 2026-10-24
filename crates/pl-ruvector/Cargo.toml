@@ -1,0 +1,16 @@
+[package]
+name = "pl-ruvector"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+pl-embedding = { path = "../pl-embedding" }
+pl-errors = { path = "../pl-errors" }
+pl-types = { path = "../pl-types" }
+ruvector-core = { workspace = true }
+serde_json = { workspace = true }
+
+[lints]
+workspace = true

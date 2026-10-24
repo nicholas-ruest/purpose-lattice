@@ -1,0 +1,167 @@
+:root {
+  font-family: Inter, system-ui;
+  background: #06100f;
+  color: #eafbf6;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: radial-gradient(circle at 80% 10%, #123d35, #06100f 45%);
+  min-height: 100vh;
+}
+main {
+  max-width: 1120px;
+  margin: auto;
+  padding: 32px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 28px 0;
+}
+h1 {
+  font-size: clamp(2.6rem, 7vw, 5.4rem);
+  margin: 0.1em 0;
+  letter-spacing: -0.06em;
+}
+p {
+  color: #a8c7bf;
+}
+.eyebrow {
+  color: #62f6ca;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.76rem;
+}
+.pulse {
+  border: 1px solid #38d3a6;
+  padding: 10px 14px;
+  border-radius: 999px;
+  color: #62f6ca;
+}
+nav {
+  display: flex;
+  gap: 10px;
+  margin: 24px 0;
+}
+button {
+  background: #37d9a8;
+  color: #04110d;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.secondary {
+  background: #183c34;
+  color: #d7fff2;
+  margin-left: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 20px;
+}
+.panel {
+  background: rgba(9, 29, 25, 0.88);
+  border: 1px solid #1b5547;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 24px 70px #0006;
+}
+.card {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+  margin: 8px 0;
+  background: #102d27;
+  color: #dffcf3;
+}
+.card.active {
+  outline: 2px solid #62f6ca;
+}
+.card span,
+.card small {
+  color: #9fc8bc;
+  margin-top: 5px;
+}
+.notice,
+.error,
+.loading {
+  padding: 14px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.notice {
+  background: #0e493a;
+}
+.error {
+  background: #612a35;
+}
+.loading {
+  background: #183c34;
+}
+.result {
+  display: grid;
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 14px;
+  background: #0a1d19;
+}
+.result span {
+  text-transform: uppercase;
+  color: #62f6ca;
+}
+.result strong {
+  font-size: 3rem;
+}
+.result code {
+  margin-top: 10px;
+  color: #7edbbe;
+}
+form {
+  display: grid;
+  gap: 14px;
+}
+label {
+  display: grid;
+  gap: 6px;
+}
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #2b6557;
+  background: #081c18;
+  color: white;
+}
+pre {
+  white-space: pre-wrap;
+  max-height: 480px;
+  overflow: auto;
+  background: #04100d;
+  padding: 16px;
+  border-radius: 12px;
+}
+@media (max-width: 720px) {
+  main {
+    padding: 18px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  header {
+    align-items: start;
+    flex-direction: column;
+  }
+  .pulse {
+    margin-top: 12px;
+  }
+  nav {
+    overflow: auto;
+  }
+}

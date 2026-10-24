@@ -1,0 +1,16 @@
+[package]
+name = "pl-audit"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+pl-errors = { path = "../pl-errors" }
+pl-types = { path = "../pl-types" }
+sha2 = { workspace = true }
+hex = { workspace = true }
+chrono = { workspace = true }
+
+[lints]
+workspace = true

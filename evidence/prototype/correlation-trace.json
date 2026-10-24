@@ -1,0 +1,16 @@
+{
+  "journey": "safe-plan",
+  "correlation_id": "browser-observed-at-runtime",
+  "path": [
+    "React evaluate control",
+    "POST /api/v1/covenants/support-cases/evaluate",
+    "session/correlation/idempotency middleware",
+    "LatticeService",
+    "Apache Arrow RecordBatch",
+    "conformal + taint + retention",
+    "RuVector recall",
+    "RVF append",
+    "rendered EvaluationResult"
+  ],
+  "source": "populated by executed acceptance evidence"
+}
