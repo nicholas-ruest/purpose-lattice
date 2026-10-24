@@ -34,8 +34,8 @@ Open `http://127.0.0.1:14273`; API health is `http://127.0.0.1:18180/readyz`. St
 | RuVector Core | 2.4.0 / `46d816ddc4c2a8a06cd3613534a79b1d557d858b` | `VectorDB::insert` and `VectorDB::search` provide analogue-policy recall | Ruvnet-only baseline loses typed column evidence and enterprise processing semantics |
 | RVF Runtime | 0.3.2 / `46d816ddc4c2a8a06cd3613534a79b1d557d858b` | `RvfStore` appends and reopens auditable decisions | Restart retrieval and append-only evidence disappear |
 | Apache Arrow Rust | 60.0.0 / `b391e5af7dff9f6909af45c01f7dddb68ba08c0f` | `RecordBatch` carries the selected-field execution plan | Capability score falls from 0.910 to 0.710 |
-| Split conformal bound | local implementation, ADR-0008 | Bounds semantic-purpose drift before effects | Capability score falls from 0.910 to 0.790 |
-| Taint lattice | local implementation, ADR-0009 | Propagates sensitivity through operations and sinks | Forbidden export can no longer be rejected by lattice order |
+| Split conformal bound | local implementation, ADR-0009 | Bounds semantic-purpose drift before effects | Capability score falls from 0.910 to 0.790 |
+| Taint lattice | local implementation, ADR-0010 | Propagates sensitivity through operations and sinks | Forbidden export can no longer be rejected by lattice order |
 
 ## Measured benchmark and ablations
 
